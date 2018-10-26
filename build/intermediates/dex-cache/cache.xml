@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/appdesigner/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.3.0/support-annotations-23.3.0.jar"
+        jumboMode="false"
+        revision="27.0.3"
+        sha1="db7791d75a07fef9844d06236c1c59ba7bf6997c">
+        <dex dex="/Users/appdesigner/udacity/android/ud839_Miwok/app/build/intermediates/pre-dexed/debug/support-annotations-23.3.0_57238c2c4a88643a518c891be2e8877c9d7e2cef.jar" />
+    </item>
+    <item
+        jar="/Users/appdesigner/udacity/android/ud839_Miwok/app/build/intermediates/exploded-aar/com.android.support/design/23.3.0/jars/classes.jar"
+        jumboMode="false"
+        revision="27.0.3"
+        sha1="f0001e71cea6ae432a00021c6f727f5ef0f3d27e">
+        <dex dex="/Users/appdesigner/udacity/android/ud839_Miwok/app/build/intermediates/pre-dexed/debug/com.android.support-design-23.3.0_115346d0d03326923733142112e97e039d741ae9.jar" />
+    </item>
+    <item
+        jar="/Users/appdesigner/udacity/android/ud839_Miwok/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.3.0/jars/classes.jar"
+        jumboMode="false"
+        revision="27.0.3"
+        sha1="23be6993826b8fd88bbc8d14928bb3b8960d3d4e">
+        <dex dex="/Users/appdesigner/udacity/android/ud839_Miwok/app/build/intermediates/pre-dexed/debug/com.android.support-animated-vector-drawable-23.3.0_a743b410c593e9714b6529fee1baa611da4ac9de.jar" />
+    </item>
+    <item
+        jar="/Users/appdesigner/udacity/android/ud839_Miwok/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.3.0/jars/classes.jar"
+        jumboMode="false"
+        revision="27.0.3"
+        sha1="a0b5d60246cd9d4f3f2443611b3b4c25265840b5">
+        <dex dex="/Users/appdesigner/udacity/android/ud839_Miwok/app/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-23.3.0_3c34464ca11c16963c3a54ecca5cb1d9a6fabfe8.jar" />
+    </item>
+    <item
+        jar="/Users/appdesigner/udacity/android/ud839_Miwok/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.3.0/jars/classes.jar"
+        jumboMode="false"
+        revision="27.0.3"
+        sha1="debf30ce0a7560396b6235edef77e447006454c2">
+        <dex dex="/Users/appdesigner/udacity/android/ud839_Miwok/app/build/intermediates/pre-dexed/debug/com.android.support-recyclerview-v7-23.3.0_b43260304124393d972a30c0a234f248cd73df2a.jar" />
+    </item>
+    <item
+        jar="/Users/appdesigner/udacity/android/ud839_Miwok/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/jars/classes.jar"
+        jumboMode="false"
+        revision="27.0.3"
+        sha1="1b8e03daaa43fb0a4cd57e378167c2fd70454c1e">
+        <dex dex="/Users/appdesigner/udacity/android/ud839_Miwok/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-23.3.0_6a7f425637f6b862e12e0dd1bca265fb48dec4da.jar" />
+    </item>
+    <item
+        jar="/Users/appdesigner/udacity/android/ud839_Miwok/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.3.0/jars/libs/internal_impl-23.3.0.jar"
+        jumboMode="false"
+        revision="27.0.3"
+        sha1="4da5a4d697d32497c6f85567a5112e62fdfd0676">
+        <dex dex="/Users/appdesigner/udacity/android/ud839_Miwok/app/build/intermediates/pre-dexed/debug/internal_impl-23.3.0_293e0b0531c0ef603e8033e3b9d08d9f61d38f8c.jar" />
+    </item>
+    <item
+        jar="/Users/appdesigner/udacity/android/ud839_Miwok/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.3.0/jars/classes.jar"
+        jumboMode="false"
+        revision="27.0.3"
+        sha1="8a034dd16c0dfd75fe86c52c2cd581592acc684a">
+        <dex dex="/Users/appdesigner/udacity/android/ud839_Miwok/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-23.3.0_4e9120e1a637917e2b769eb92bf275fb45bae256.jar" />
+    </item>
+
+</items>
