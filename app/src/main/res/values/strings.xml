@@ -28,13 +28,8 @@
     <!-- Category name for the vocabulary words for family members [CHAR LIMIT=20] -->
     <string name="category_family">Family Members</string>
 
-    <!-- Category name for the vocabulary words for numbers [CHAR LIMIT=20] -->
+    <!-- Category name for karaoke [CHAR LIMIT=20] -->
     <string name="category_karaoke">Karaoke</string>
-
-    <!-- Category name for the vocabulary words for family members [CHAR LIMIT=20] -->
-    <string name="category_realestate">RealEstate</string>
-
-
 
 
 </resources>

@@ -52,11 +52,6 @@
         android:background="@color/category_karaoke"
         android:text="@string/category_karaoke" />
 
-    <TextView
-        android:id="@+id/realestate"
-        style="@style/CategoryStyle"
-        android:background="@color/category_realestate"
-        android:text="@string/category_realestate" />
 
 
 </LinearLayout>
