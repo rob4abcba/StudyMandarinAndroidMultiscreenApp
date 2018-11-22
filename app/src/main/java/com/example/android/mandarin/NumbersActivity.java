@@ -40,8 +40,9 @@ public class NumbersActivity extends AppCompatActivity {
         words.add("si");
         words.add("wu");
         words.add("liu");
+        words.add("qi");
         words.add("ba");
-        words.add("jiiu");
+        words.add("jiu");
         words.add("shi");
         words.add("shi yi");
         words.add("shi er");
@@ -49,7 +50,11 @@ public class NumbersActivity extends AppCompatActivity {
         words.add("shi si");
         words.add("shi wu");
         words.add("shi liu");
-
+        words.add("shi qi");
+        words.add("shi ba");
+        words.add("shi jiu");
+        words.add("er shi");
+        words.add("er shi yi");
 
 
 
