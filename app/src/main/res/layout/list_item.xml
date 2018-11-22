@@ -8,23 +8,23 @@
     >
 
 
-
     <TextView
         android:id="@+id/pinyin_text_view"
+        android:background="@color/background_pinyin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textAlignment="center"
         tools:text="simplified chinese character"
         />
 
-
     <TextView
         android:id="@+id/english_text_view"
+        android:background="@color/background_english"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textAlignment="center"
         tools:text="english translation"
         />
-
-
 
 
     </LinearLayout>
