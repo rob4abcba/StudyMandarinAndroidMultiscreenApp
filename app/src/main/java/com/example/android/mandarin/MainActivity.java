@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.example.android.miwok;
+package com.example.android.mandarin;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -21,8 +21,11 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.TextView;
+import android.util.Log;
 
 public class MainActivity extends AppCompatActivity {
+
+    private static final String TAG="MyMessage";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -94,5 +97,40 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(phrasesIntent);
             }
         });
+
+        // Find the View that shows the karaoke category
+        TextView karaoke = (TextView) findViewById(R.id.karaoke);
+
+        // Set a click listener on that View
+        karaoke.setOnClickListener(new OnClickListener() {
+            // The code in this method will be executed when the colors category is clicked on.
+            @Override
+            public void onClick(View view) {
+                // Create a new intent to open the {@link ColorsActivity}
+                Intent karaokeIntent = new Intent(MainActivity.this, KaraokeActivity.class);
+
+                // Start the new activity
+                startActivity(karaokeIntent);
+            }
+        });
+
+        // RL Log the states
+        Log.i(TAG, "onCreate");
     }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        Log.i(TAG, "onStart");
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        Log.i(TAG, "onResume");
+    }
+
+
+
+
 }
