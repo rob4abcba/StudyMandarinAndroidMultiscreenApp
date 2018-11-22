@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.example.android.miwok;
+package com.example.android.mandarin;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -94,5 +94,38 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(phrasesIntent);
             }
         });
+
+        // Find the View that shows the karaoke category
+        TextView karaoke = (TextView) findViewById(R.id.karaoke);
+
+        // Set a click listener on that View
+        numbers.setOnClickListener(new OnClickListener() {
+            // The code in this method will be executed when the numbers category is clicked on.
+            @Override
+            public void onClick(View view) {
+                // Create a new intent to open the {@link NumbersActivity}
+                Intent karaokeIntent = new Intent(MainActivity.this, KaraokeActivity.class);
+
+                // Start the new activity
+                startActivity(karaokeIntent);
+            }
+        });
+
+        // Find the View that shows the karaoke category
+        TextView realestate = (TextView) findViewById(R.id.realestate);
+
+        // Set a click listener on that View
+        numbers.setOnClickListener(new OnClickListener() {
+            // The code in this method will be executed when the numbers category is clicked on.
+            @Override
+            public void onClick(View view) {
+                // Create a new intent to open the {@link NumbersActivity}
+                Intent realestateIntent = new Intent(MainActivity.this, RealEstateActivity.class);
+
+                // Start the new activity
+                startActivity(realestateIntent);
+            }
+        });
+
     }
 }

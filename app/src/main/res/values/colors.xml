@@ -34,4 +34,12 @@
 
     <!-- Background color for the phrases category -->
     <color name="category_phrases">#16AFCA</color>
+
+    <!-- Background color for the karaoke category -->
+    <color name="category_karaoke">#888888</color>
+
+    <!-- Background color for the real estate category -->
+    <color name="category_realestate">#FD0E09</color>
+
+
 </resources>

@@ -20,7 +20,7 @@
     android:layout_height="match_parent"
     android:background="@color/tan_background"
     android:orientation="vertical"
-    tools:context="com.example.android.miwok.MainActivity">
+    tools:context="com.example.android.mandarin.MainActivity">
 
     <TextView
         android:id="@+id/numbers"
@@ -45,5 +45,18 @@
         style="@style/CategoryStyle"
         android:background="@color/category_phrases"
         android:text="@string/category_phrases" />
+
+    <TextView
+        android:id="@+id/karaoke"
+        style="@style/CategoryStyle"
+        android:background="@color/category_karaoke"
+        android:text="@string/category_karaoke" />
+
+    <TextView
+        android:id="@+id/realestate"
+        style="@style/CategoryStyle"
+        android:background="@color/category_realestate"
+        android:text="@string/category_realestate" />
+
 
 </LinearLayout>
