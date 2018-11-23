@@ -15,16 +15,10 @@
  */
 package com.example.android.mandarin;
 
-import android.provider.UserDictionary;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
-import android.view.View;
-import android.widget.ArrayAdapter;
-import android.widget.GridView;
-import android.widget.LinearLayout;
 import android.widget.ListView;
-import android.widget.TextView;
+
 import java.util.ArrayList;
 
 public class NumbersActivity extends AppCompatActivity {
@@ -32,19 +26,19 @@ public class NumbersActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_numbers);
+        setContentView(R.layout.word_list);
 
         // Change the ArrayList of Strings called "words" into an ArrayList of Word objects
         ArrayList<Word> words = new ArrayList<Word>();
         // RL ArrayList<String> list = new ArrayList<String>();
 
         // words.add("yi");
-        words.add(new Word("one","yi"));
-        words.add(new Word("two","er"));
-        words.add(new Word("three","san"));
-        words.add(new Word("four","si"));
-        words.add(new Word("five","wu"));
-        words.add(new Word("six","liu"));
+        words.add(new Word("one","yī", R.drawable.number_one));
+        words.add(new Word("two","èr", R.drawable.number_two));
+        words.add(new Word("three","sān", R.drawable.number_three));
+        words.add(new Word("four","si", R.drawable.number_one));
+        words.add(new Word("five","wu", R.drawable.number_one));
+        words.add(new Word("six","liu", R.drawable.number_one));
 
         // Create an {@link ArrayAdapter}, whose data source is a list of Strings. The
         // adapter knows how to create layouts for each item in the list, using the
@@ -68,7 +62,7 @@ public class NumbersActivity extends AppCompatActivity {
 
         // Find the {@link ListView} object in the view hierarchy of the {@link Activity}.
         // There should be a {@link ListView} with the view ID called list, which is declared in the
-        // activity_numbers.xml layout file.
+        // word_list.xml layout file.
         // Experiment with different types of views (GridView, etc.). Then change back to ListView.
         // RL GridView listView = (GridView) findViewById(R.id.list);
         ListView listView = (ListView) findViewById(R.id.list);
