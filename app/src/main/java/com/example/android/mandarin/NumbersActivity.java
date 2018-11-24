@@ -21,7 +21,7 @@ import android.widget.ListView;
 
 import java.util.ArrayList;
 
-public class ColorsActivity extends AppCompatActivity {
+public class NumbersActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,12 +33,12 @@ public class ColorsActivity extends AppCompatActivity {
         // RL ArrayList<String> list = new ArrayList<String>();
 
         // words.add("yi");
-        words.add(new Word("red","Hóngsè", R.drawable.color_red));
-        words.add(new Word("orange","chéngzi", R.drawable.color_red));
-        words.add(new Word("yellow","huángsè", R.drawable.color_red));
-        words.add(new Word("four","si", R.drawable.color_red));
-        words.add(new Word("five","wu", R.drawable.color_red));
-        words.add(new Word("six","liu", R.drawable.color_red));
+        words.add(new Word("one","yī", R.drawable.number_one));
+        words.add(new Word("two","èr", R.drawable.number_two));
+        words.add(new Word("three","sān", R.drawable.number_three));
+        words.add(new Word("four","si", R.drawable.number_one));
+        words.add(new Word("five","wu", R.drawable.number_one));
+        words.add(new Word("six","liu", R.drawable.number_one));
 
         // Create an {@link ArrayAdapter}, whose data source is a list of Strings. The
         // adapter knows how to create layouts for each item in the list, using the
@@ -62,7 +62,7 @@ public class ColorsActivity extends AppCompatActivity {
 
         // Find the {@link ListView} object in the view hierarchy of the {@link Activity}.
         // There should be a {@link ListView} with the view ID called list, which is declared in the
-        // word_listyout file.
+        // word_list.xml layout file.
         // Experiment with different types of views (GridView, etc.). Then change back to ListView.
         // RL GridView listView = (GridView) findViewById(R.id.list);
         ListView listView = (ListView) findViewById(R.id.list);

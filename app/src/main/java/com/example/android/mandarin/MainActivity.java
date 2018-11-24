@@ -130,7 +130,11 @@ public class MainActivity extends AppCompatActivity {
         Log.i(TAG, "onResume");
     }
 
-
+    @Override
+    protected void onStop() {
+        super.onStop();
+        Log.i(TAG, "onStop");
+    }
 
 
 }

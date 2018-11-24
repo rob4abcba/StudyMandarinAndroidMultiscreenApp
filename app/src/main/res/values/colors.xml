@@ -14,6 +14,7 @@
      limitations under the License.
 -->
 <resources>
+
     <!-- Primary color of the app (shown in the app bar) -->
     <color name="primary_color">#4A312A</color>
 
@@ -37,5 +38,11 @@
 
     <!-- Background color for the karaoke category -->
     <color name="category_karaoke">#FD3009</color>
+
+    <!-- Background color for the pinyin string -->
+    <color name="background_pinyin">#FD3009</color>
+
+    <!-- Background color for the English string -->
+    <color name="background_english">#16AFCA</color>
 
 </resources>
