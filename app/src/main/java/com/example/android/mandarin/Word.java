@@ -17,7 +17,7 @@ public class Word {
     private String mSimplifiedChineseChar;
 
     /** Image resource ID */
-    private int mImageResourceId;
+    private int mImageResourceId = NO_IMAGE_PROVIDED;
 
     /** Set at No Image state by default */
     private static final int NO_IMAGE_PROVIDED = -1;
