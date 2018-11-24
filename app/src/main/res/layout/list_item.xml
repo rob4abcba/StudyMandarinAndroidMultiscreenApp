@@ -6,33 +6,42 @@
     android:orientation="horizontal"
     android:padding="16dp"
     android:minHeight="@dimen/list_item_height"
-    android:background="@color/tan_background"
-
-
-    >
+    android:background="@color/tan_background">
 
 
     <ImageView
         android:id="@+id/image"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_weight="1"
-        android:layout_height="match_parent"
+        android:layout_height="@dimen/list_item_height"
     />
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/text_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:minHeight="@dimen/list_item_height"
+        >
 
     <TextView
         android:id="@+id/simpchar_text_view"
         android:textColorHighlight="@color/background_simpchar"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_weight="1"
         android:layout_height="wrap_content"
         android:textAlignment="center"
+        android:textStyle="bold"
+        android:textSize="25sp"
         tools:text="simplified chinese character"
         />
 
     <TextView
         android:id="@+id/pinyin_text_view"
         android:textColorHighlight="@color/background_pinyin"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_weight="1"
         android:layout_height="wrap_content"
         android:textAlignment="center"
@@ -42,12 +51,12 @@
     <TextView
         android:id="@+id/english_text_view"
         android:textColorHint="@color/background_english"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_weight="1"
         android:layout_height="wrap_content"
         android:textAlignment="center"
         tools:text="english text"
         />
-
+    </LinearLayout>
 
     </LinearLayout>
