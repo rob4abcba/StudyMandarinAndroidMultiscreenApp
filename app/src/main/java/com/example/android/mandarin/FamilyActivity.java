@@ -34,7 +34,7 @@ public class FamilyActivity extends AppCompatActivity {
 
         // words.add("yi");
         words.add(new Word("father","fùqīn", R.drawable.family_father));
-        words.add(new Word("mother","mǔqīn", R.drawable.family_mother));
+        words.add(new Word("母亲","mǔqīn", R.drawable.family_mother));
         words.add(new Word("three","san", R.drawable.family_father));
         words.add(new Word("four","si", R.drawable.family_father));
         words.add(new Word("five","wu", R.drawable.family_father));
