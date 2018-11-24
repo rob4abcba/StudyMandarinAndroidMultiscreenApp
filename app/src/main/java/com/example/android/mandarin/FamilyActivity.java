@@ -33,12 +33,12 @@ public class FamilyActivity extends AppCompatActivity {
         // RL ArrayList<String> list = new ArrayList<String>();
 
         // words.add("yi");
-        words.add(new Word("father","fùqīn", R.drawable.family_father));
-        words.add(new Word("母亲","mǔqīn", R.drawable.family_mother));
-        words.add(new Word("three","san", R.drawable.family_father));
-        words.add(new Word("four","si", R.drawable.family_father));
-        words.add(new Word("five","wu", R.drawable.family_father));
-        words.add(new Word("six","liu", R.drawable.family_father));
+        words.add(new Word("father","fùqīn", "父亲",R.drawable.family_father));
+        words.add(new Word("母亲","mǔqīn", "父亲",R.drawable.family_mother));
+        words.add(new Word("three","san", "父亲",R.drawable.family_father));
+        words.add(new Word("four","si", "父亲",R.drawable.family_father));
+        words.add(new Word("five","wu", "父亲",R.drawable.family_father));
+        words.add(new Word("six","liu", "父亲",R.drawable.family_father));
 
         // Create an {@link ArrayAdapter}, whose data source is a list of Strings. The
         // adapter knows how to create layouts for each item in the list, using the

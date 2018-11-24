@@ -58,16 +58,22 @@ public class WordAdapter extends ArrayAdapter<Word> {
         Word currentWord = getItem(position);
 
         // Find the TextView in the list_item.xml layout with the ID version_name
-        TextView nameTextView = (TextView) listItemView.findViewById(R.id.pinyin_text_view);
+        TextView simpcharTextView = (TextView) listItemView.findViewById(R.id.simpchar_text_view);
         // Get the version name from the current Word object and
         // set this text on the name TextView
-        nameTextView.setText(currentWord.getPinyinTranslation());
+        simpcharTextView.setText(currentWord.getSimplifiedChineseChar());
+
+        // Find the TextView in the list_item.xml layout with the ID version_name
+        TextView pinyinTextView = (TextView) listItemView.findViewById(R.id.pinyin_text_view);
+        // Get the version name from the current Word object and
+        // set this text on the name TextView
+        pinyinTextView.setText(currentWord.getPinyinTranslation());
 
         // Find the TextView in the list_item.xml layout with the ID version_number
-        TextView numberTextView = (TextView) listItemView.findViewById(R.id.english_text_view);
+        TextView englishTextView = (TextView) listItemView.findViewById(R.id.english_text_view);
         // Get the version number from the current Word object and
         // set this text on the number TextView
-        numberTextView.setText(currentWord.getEnglishTranslation());
+        englishTextView.setText(currentWord.getEnglishTranslation());
 
         // Find the ImageView in the list_item.xml layout with the ID image.
         ImageView imageView = (ImageView) listItemView.findViewById(R.id.image);

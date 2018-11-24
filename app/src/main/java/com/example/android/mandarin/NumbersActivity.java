@@ -33,12 +33,12 @@ public class NumbersActivity extends AppCompatActivity {
         // RL ArrayList<String> list = new ArrayList<String>();
 
         // words.add("yi");
-        words.add(new Word("one","yī", R.drawable.number_one));
-        words.add(new Word("two","èr", R.drawable.number_two));
-        words.add(new Word("three","sān", R.drawable.number_three));
-        words.add(new Word("four","si", R.drawable.si));
-        words.add(new Word("five","wu", R.drawable.wu20px));
-        words.add(new Word("six","liu", R.drawable.liu72px));
+        words.add(new Word("one","yī", "四",R.drawable.number_one));
+        words.add(new Word("two","èr", "四",R.drawable.number_two));
+        words.add(new Word("three","sān", "四",R.drawable.number_three));
+        words.add(new Word("four","si", "四", R.drawable.si));
+        words.add(new Word("five","wu", "五", R.drawable.wu20px));
+        words.add(new Word("six","liu", "六", R.drawable.liu72px));
 
         // Create an {@link ArrayAdapter}, whose data source is a list of Strings. The
         // adapter knows how to create layouts for each item in the list, using the

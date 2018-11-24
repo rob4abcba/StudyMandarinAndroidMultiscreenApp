@@ -13,6 +13,9 @@ public class Word {
     /** Mandarin translation for the word */
     private String mPinyinTranslation;
 
+    /** Simplified Chinese character for the word */
+    private String mSimplifiedChineseChar;
+
     /** Image resource ID */
     private int mImageResourceId;
 
@@ -20,14 +23,16 @@ public class Word {
     private static final int NO_IMAGE_PROVIDED = -1;
 
 
-    public Word(String englishTranslation, String pinyinTranslation) {
+    public Word(String englishTranslation, String pinyinTranslation, String simplifiedChineseChar) {
         mEnglishTranslation = englishTranslation;
         mPinyinTranslation = pinyinTranslation;
+        mSimplifiedChineseChar = simplifiedChineseChar;
     }
 
-    public Word(String englishTranslation, String pinyinTranslation, int imageResourceId) {
+    public Word(String englishTranslation, String pinyinTranslation, String simplifiedChineseChar, int imageResourceId) {
         mEnglishTranslation = englishTranslation;
         mPinyinTranslation = pinyinTranslation;
+        mSimplifiedChineseChar = simplifiedChineseChar;
         mImageResourceId = imageResourceId;
     }
 
@@ -46,6 +51,14 @@ public class Word {
      */
     public String getPinyinTranslation() {
         return mPinyinTranslation;
+    }
+
+    /**
+     * Get the Simplified Chinese character of the word.
+     * @return
+     */
+    public String getSimplifiedChineseChar() {
+        return mSimplifiedChineseChar;
     }
 
     /**

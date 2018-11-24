@@ -33,12 +33,12 @@ public class PhrasesActivity extends AppCompatActivity {
         // RL ArrayList<String> list = new ArrayList<String>();
 
         // words.add("yi");
-        words.add(new Word("How are you?","Nǐ hǎo ma?"));
-        words.add(new Word("What is your name?","Nǐ jiào shénme míngzì?"));
-        words.add(new Word("three","san"));
-        words.add(new Word("four","si"));
-        words.add(new Word("five","wu"));
-        words.add(new Word("six","liu"));
+        words.add(new Word("How are you?","Nǐ hǎo ma?","父亲"));
+        words.add(new Word("What is your name?","Nǐ jiào shénme míngzì?","父亲"));
+        words.add(new Word("three","san","父亲"));
+        words.add(new Word("four","si","父亲"));
+        words.add(new Word("five","wu","父亲"));
+        words.add(new Word("six","liu","父亲"));
 
         // Create an {@link ArrayAdapter}, whose data source is a list of Strings. The
         // adapter knows how to create layouts for each item in the list, using the
