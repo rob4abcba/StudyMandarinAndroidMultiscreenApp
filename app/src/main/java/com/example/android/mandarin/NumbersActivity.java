@@ -15,13 +15,19 @@
  */
 package com.example.android.mandarin;
 
+import android.media.MediaPlayer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
 public class NumbersActivity extends AppCompatActivity {
+
+    private MediaPlayer mMediaPlayer;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -74,6 +80,18 @@ public class NumbersActivity extends AppCompatActivity {
         // RL listView.setAdapter(itemsAdapter);
         // Same as above except pass in the {@link WordAdapter} with the variable name adapter.
         listView.setAdapter(adapter);
+
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                // Toast to test out this onItemClick listener.
+                Toast.makeText(NumbersActivity.this, "List item clicked", Toast.LENGTH_SHORT).show();
+
+                // RL Uncomment section below when have a REAL Android device to run on.  Hangs when use virtual device.
+                // mMediaPlayer = MediaPlayer.create(NumbersActivity.this, R.raw.number_one);
+                // mMediaPlayer.start(); // No need to call prepare(); create() does that for you
+            }
+        });
 
     }
 }
