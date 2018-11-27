@@ -22,18 +22,23 @@ public class Word {
     /** Set at No Image state by default */
     private static final int NO_IMAGE_PROVIDED = -1;
 
+    /** Audio resource ID for the word */
+    private int mAudioResourceId;
 
-    public Word(String englishTranslation, String pinyinTranslation, String simplifiedChineseChar) {
+
+    public Word(String englishTranslation, String pinyinTranslation, String simplifiedChineseChar, int audioResourceId) {
         mEnglishTranslation = englishTranslation;
         mPinyinTranslation = pinyinTranslation;
         mSimplifiedChineseChar = simplifiedChineseChar;
+        mAudioResourceId =  audioResourceId;
     }
 
-    public Word(String englishTranslation, String pinyinTranslation, String simplifiedChineseChar, int imageResourceId) {
+    public Word(String englishTranslation, String pinyinTranslation, String simplifiedChineseChar, int imageResourceId, int audioResourceId) {
         mEnglishTranslation = englishTranslation;
         mPinyinTranslation = pinyinTranslation;
         mSimplifiedChineseChar = simplifiedChineseChar;
         mImageResourceId = imageResourceId;
+        mAudioResourceId =  audioResourceId;
     }
 
 
@@ -78,6 +83,14 @@ public class Word {
      */
     public boolean hasImage(){
         return mImageResourceId != NO_IMAGE_PROVIDED;
+    }
+
+    /**
+     * Get Audio resource ID.
+     * @return
+     */
+    public int getAudioResourceId() {
+        return mAudioResourceId;
     }
 
 
