@@ -1,14 +1,18 @@
 package com.example.android.mandarin;
 
-import android.support.v7.app.AppCompatActivity;
+import android.media.MediaPlayer;
 import android.os.Bundle;
-import android.util.Log;
-import android.widget.LinearLayout;
+import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
-import android.widget.TextView;
+import android.widget.Toast;
+
 import java.util.ArrayList;
 
 public class KaraokeActivity extends AppCompatActivity {
+
+    private MediaPlayer mMediaPlayer;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -16,16 +20,16 @@ public class KaraokeActivity extends AppCompatActivity {
         setContentView(R.layout.word_list);
 
         // Change the ArrayList of Strings called "words" into an ArrayList of Word objects
-        ArrayList<Word> words = new ArrayList<Word>();
+        final ArrayList<Word> words = new ArrayList<Word>();
         // RL ArrayList<String> list = new ArrayList<String>();
 
         // words.add("yi");
-        words.add(new Word("fairy tale","tónghuà", "童话"));
-        words.add(new Word("child","tóng", "童",R.drawable.family_younger_brother));
-        words.add(new Word("words","huà", "话"));
-        words.add(new Word("Michael Wong","Guāng Liáng", "光良"));
-        words.add(new Word("light","Guāng", "光"));
-        words.add(new Word("good","Liáng", "良"));
+        words.add(new Word("fairy tale","tónghuà", "童话", R.raw.phrase_lets_go));
+        words.add(new Word("child","tóng", "童",R.drawable.family_younger_brother, R.raw.family_younger_brother));
+        words.add(new Word("words","huà", "话", R.raw.family_younger_brother));
+        words.add(new Word("Michael Wong","Guāng Liáng", "光良", R.raw.family_younger_brother));
+        words.add(new Word("light","Guāng", "光", R.raw.family_younger_brother));
+        words.add(new Word("good","Liáng", "良", R.raw.family_younger_brother));
 
         // Create an {@link ArrayAdapter}, whose data source is a list of Strings. The
         // adapter knows how to create layouts for each item in the list, using the
@@ -61,6 +65,23 @@ public class KaraokeActivity extends AppCompatActivity {
         // RL listView.setAdapter(itemsAdapter);
         // Same as above except pass in the {@link WordAdapter} with the variable name adapter.
         listView.setAdapter(adapter);
+
+
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                // Toast to test out this onItemClick listener.
+                Toast.makeText(KaraokeActivity.this, "List item clicked", Toast.LENGTH_SHORT).show();
+
+                Word word = words.get(position);
+
+                // RL Uncomment section below when have a REAL Android device to run on.  Hangs when use virtual device.
+                mMediaPlayer = MediaPlayer.create(KaraokeActivity.this, word.getAudioResourceId());
+                mMediaPlayer.start(); // No need to call prepare(); create() does that for you
+            }
+        });
+
+
 
     }
 }
