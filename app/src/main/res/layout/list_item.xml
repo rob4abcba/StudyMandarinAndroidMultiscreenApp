@@ -9,13 +9,6 @@
     android:background="@color/tan_background">
 
 
-    <ImageView
-        android:id="@+id/image"
-        android:layout_width="0dp"
-        android:layout_weight="1"
-        android:layout_height="@dimen/list_item_height"
-    />
-
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         android:id="@+id/text_container"
@@ -25,6 +18,14 @@
         android:padding="16dp"
         android:minHeight="@dimen/list_item_height"
         >
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="@dimen/list_item_height"
+    />
+
 
     <TextView
         android:id="@+id/simpchar_text_view"
