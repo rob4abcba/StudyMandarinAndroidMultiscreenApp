@@ -20,12 +20,12 @@ public class KaraokeActivity extends AppCompatActivity {
         // RL ArrayList<String> list = new ArrayList<String>();
 
         // words.add("yi");
-        words.add(new Word("one","yī", "父亲",R.drawable.number_one));
-        words.add(new Word("two","èr", "父亲",R.drawable.number_two));
-        words.add(new Word("three","sān", "父亲",R.drawable.number_three));
-        words.add(new Word("four","si", "父亲",R.drawable.number_one));
-        words.add(new Word("five","wu", "父亲",R.drawable.number_one));
-        words.add(new Word("six","liu", "父亲",R.drawable.number_one));
+        words.add(new Word("fairy tale","tónghuà", "童话"));
+        words.add(new Word("child","tóng", "童",R.drawable.family_younger_brother));
+        words.add(new Word("words","huà", "话"));
+        words.add(new Word("Michael Wong","Guāng Liáng", "光良"));
+        words.add(new Word("light","Guāng", "光"));
+        words.add(new Word("good","Liáng", "良"));
 
         // Create an {@link ArrayAdapter}, whose data source is a list of Strings. The
         // adapter knows how to create layouts for each item in the list, using the
