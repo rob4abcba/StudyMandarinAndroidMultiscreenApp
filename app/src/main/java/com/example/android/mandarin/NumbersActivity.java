@@ -35,23 +35,23 @@ public class NumbersActivity extends AppCompatActivity {
         setContentView(R.layout.word_list);
 
         // Change the ArrayList of Strings called "words" into an ArrayList of Word objects
-        ArrayList<Word> words = new ArrayList<Word>();
+        final ArrayList<Word> words = new ArrayList<Word>();
         // RL ArrayList<String> list = new ArrayList<String>();
 
         // words.add("yi");
         // words.add(new Word("one","yī", "四",R.drawable.number_one));
         // words.add(new Word("two","èr", "四",R.drawable.number_two));
         // words.add(new Word("three","sān", "四",R.drawable.number_three));
-        words.add(new Word("four","si", "四", R.drawable.si));
-        words.add(new Word("five","wu", "五", R.drawable.wu20px));
-        words.add(new Word("six","liu", "六", R.drawable.liu72px));
-        words.add(new Word("7","liu", "六", R.drawable.liu72px));
-        words.add(new Word("8","liu", "六", R.drawable.liu72px));
-        words.add(new Word("9","liu", "六", R.drawable.liu72px));
-        words.add(new Word("10","liu", "六", R.drawable.liu72px));
-        words.add(new Word("100","liu", "六", R.drawable.liu72px));
-        words.add(new Word("1,000","liu", "六", R.drawable.liu72px));
-        words.add(new Word("10,000","liu", "六", R.drawable.liu72px));
+        words.add(new Word("four","si", "四", R.drawable.si, R.raw.number_four));
+        words.add(new Word("five","wu", "五", R.drawable.wu20px, R.raw.number_five));
+        words.add(new Word("six","liu", "六", R.drawable.liu72px, R.raw.number_six));
+        words.add(new Word("7","liu", "六", R.drawable.liu72px, R.raw.number_seven));
+        words.add(new Word("8","liu", "六", R.drawable.liu72px, R.raw.number_eight));
+        words.add(new Word("9","liu", "六", R.drawable.liu72px, R.raw.number_nine));
+        words.add(new Word("10","liu", "六", R.drawable.liu72px, R.raw.number_ten));
+        words.add(new Word("100","liu", "六", R.drawable.liu72px, R.raw.number_ten));
+        words.add(new Word("1,000","liu", "六", R.drawable.liu72px, R.raw.number_ten));
+        words.add(new Word("10,000","liu", "六", R.drawable.liu72px, R.raw.number_ten));
 
 
 
@@ -97,9 +97,11 @@ public class NumbersActivity extends AppCompatActivity {
                 // Toast to test out this onItemClick listener.
                 Toast.makeText(NumbersActivity.this, "List item clicked", Toast.LENGTH_SHORT).show();
 
+                Word word = words.get(position);
+
                 // RL Uncomment section below when have a REAL Android device to run on.  Hangs when use virtual device.
-                // mMediaPlayer = MediaPlayer.create(NumbersActivity.this, R.raw.number_one);
-                // mMediaPlayer.start(); // No need to call prepare(); create() does that for you
+                mMediaPlayer = MediaPlayer.create(NumbersActivity.this, word.getAudioResourceId());
+                mMediaPlayer.start(); // No need to call prepare(); create() does that for you
             }
         });
 
