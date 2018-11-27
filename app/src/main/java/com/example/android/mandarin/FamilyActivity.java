@@ -15,13 +15,19 @@
  */
 package com.example.android.mandarin;
 
-import android.support.v7.app.AppCompatActivity;
+import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
 public class FamilyActivity extends AppCompatActivity {
+
+    private MediaPlayer mMediaPlayer;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,16 +35,16 @@ public class FamilyActivity extends AppCompatActivity {
         setContentView(R.layout.word_list);
 
         // Change the ArrayList of Strings called "words" into an ArrayList of Word objects
-        ArrayList<Word> words = new ArrayList<Word>();
+        final ArrayList<Word> words = new ArrayList<Word>();
         // RL ArrayList<String> list = new ArrayList<String>();
 
         // words.add("yi");
-        words.add(new Word("father","fùqīn", "父亲",R.drawable.family_father));
-        words.add(new Word("母亲","mǔqīn", "父亲",R.drawable.family_mother));
-        words.add(new Word("three","san", "父亲",R.drawable.family_father));
-        words.add(new Word("four","si", "父亲",R.drawable.family_father));
-        words.add(new Word("five","wu", "父亲",R.drawable.family_father));
-        words.add(new Word("six","liu", "父亲",R.drawable.family_father));
+        words.add(new Word("father","fùqīn", "父亲",R.drawable.family_father, R.raw.family_father));
+        words.add(new Word("母亲","mǔqīn", "父亲",R.drawable.family_mother, R.raw.family_mother));
+        words.add(new Word("three","san", "父亲",R.drawable.family_father, R.raw.family_father));
+        words.add(new Word("four","si", "父亲",R.drawable.family_father, R.raw.family_father));
+        words.add(new Word("five","wu", "父亲",R.drawable.family_father, R.raw.family_father));
+        words.add(new Word("six","liu", "父亲",R.drawable.family_father, R.raw.family_father));
 
         // Create an {@link ArrayAdapter}, whose data source is a list of Strings. The
         // adapter knows how to create layouts for each item in the list, using the
@@ -74,6 +80,22 @@ public class FamilyActivity extends AppCompatActivity {
         // RL listView.setAdapter(itemsAdapter);
         // Same as above except pass in the {@link WordAdapter} with the variable name adapter.
         listView.setAdapter(adapter);
+
+
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                // Toast to test out this onItemClick listener.
+                Toast.makeText(FamilyActivity.this, "List item clicked", Toast.LENGTH_SHORT).show();
+
+                Word word = words.get(position);
+
+                // RL Uncomment section below when have a REAL Android device to run on.  Hangs when use virtual device.
+                mMediaPlayer = MediaPlayer.create(FamilyActivity.this, word.getAudioResourceId());
+                mMediaPlayer.start(); // No need to call prepare(); create() does that for you
+            }
+        });
+
 
     }
 }
